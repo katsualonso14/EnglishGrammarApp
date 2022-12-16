@@ -10,7 +10,6 @@ class CategoriesViewController: UIViewController {
         label.textColor = UIColor.blue
         return label
     }()
-    
     override func loadView() {
         view = UIView()
         view.backgroundColor = .white

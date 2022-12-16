@@ -1,13 +1,11 @@
-
-import Foundation
 import UIKit
 
-class CategoriesViewController: UIViewController {
+class AccountViewController: UIViewController {
     
     let centerLabel:UILabel = {
         let label = UILabel()
-        label.text = "Categories"
-        label.textColor = UIColor.blue
+        label.text = "AccountPage"
+        label.textColor = UIColor.systemPink
         return label
     }()
     
@@ -24,3 +22,4 @@ class CategoriesViewController: UIViewController {
         ])
     }
 }
+

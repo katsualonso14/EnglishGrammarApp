@@ -2,24 +2,23 @@
 import UIKit
 
 class MainTabBarController: UITabBarController {
-    
-//    var viewControllers:[UIViewController] = []
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setTab()
-        
     }
     
     func setTab(){
         let categoriesPage = CategoriesViewController()
-        categoriesPage.tabBarItem = UITabBarItem(title: "tab1", image: .none, tag: 0)
+        categoriesPage.tabBarItem = UITabBarItem(tabBarSystemItem: .mostViewed, tag: 0)
         
         let outputPage = OutputViewController()
         outputPage.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
         
-        viewControllers = [categoriesPage,outputPage]
+        let accountPage = AccountViewController()
+        accountPage.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 2)
+        
+        viewControllers = [categoriesPage, outputPage, accountPage]
     }
 }
 

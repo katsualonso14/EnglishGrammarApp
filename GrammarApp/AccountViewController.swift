@@ -9,7 +9,8 @@ class AccountViewController: UIViewController {
         return label
     }()
     
-    override func loadView() {
+    override func viewDidLoad() {
+        super.viewDidLoad()
         view = UIView()
         view.backgroundColor = .white
         

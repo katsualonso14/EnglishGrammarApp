@@ -10,10 +10,10 @@ class MainTabBarController: UITabBarController {
     
     func setTab(){
         let categoriesPage = CategoriesViewController()
-        categoriesPage.tabBarItem = UITabBarItem(tabBarSystemItem: .mostViewed, tag: 0)
+        categoriesPage.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 0)
         
         let outputPage = OutputViewController()
-        outputPage.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
+        outputPage.tabBarItem = UITabBarItem(tabBarSystemItem: .mostViewed, tag: 1)
         
         let accountPage = AccountViewController()
         accountPage.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 2)

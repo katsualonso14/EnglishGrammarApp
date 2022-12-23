@@ -11,6 +11,8 @@ class AccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "AccountPage"
+        
         view = UIView()
         view.backgroundColor = .white
         
@@ -23,4 +25,5 @@ class AccountViewController: UIViewController {
         ])
     }
 }
+
 

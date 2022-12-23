@@ -15,6 +15,7 @@
 		235C99B52947373C007B4EB0 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235C99B42947373C007B4EB0 /* CategoriesViewController.swift */; };
 		235C99B729473767007B4EB0 /* OutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235C99B629473767007B4EB0 /* OutputViewController.swift */; };
 		235C99B9294C193E007B4EB0 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235C99B8294C193E007B4EB0 /* AccountViewController.swift */; };
+		235C99E62955999C007B4EB0 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235C99E52955999C007B4EB0 /* MainNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		235C99B42947373C007B4EB0 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		235C99B629473767007B4EB0 /* OutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputViewController.swift; sourceTree = "<group>"; };
 		235C99B8294C193E007B4EB0 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		235C99E52955999C007B4EB0 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				235C99B42947373C007B4EB0 /* CategoriesViewController.swift */,
 				235C99B629473767007B4EB0 /* OutputViewController.swift */,
 				235C99B8294C193E007B4EB0 /* AccountViewController.swift */,
+				235C99E52955999C007B4EB0 /* MainNavigationController.swift */,
 				2317A22629333AAF00E767CF /* Assets.xcassets */,
 				2317A22829333AAF00E767CF /* LaunchScreen.storyboard */,
 				2317A22B29333AAF00E767CF /* Info.plist */,
@@ -155,6 +158,7 @@
 				2317A22229333AAE00E767CF /* MainTabBarController.swift in Sources */,
 				235C99B9294C193E007B4EB0 /* AccountViewController.swift in Sources */,
 				2317A21E29333AAE00E767CF /* AppDelegate.swift in Sources */,
+				235C99E62955999C007B4EB0 /* MainNavigationController.swift in Sources */,
 				235C99B52947373C007B4EB0 /* CategoriesViewController.swift in Sources */,
 				2317A22029333AAE00E767CF /* SceneDelegate.swift in Sources */,
 			);

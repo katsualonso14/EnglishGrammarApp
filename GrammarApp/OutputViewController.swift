@@ -13,6 +13,8 @@ class OutputViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "OutPut"
+        
         view = UIView()
         view.backgroundColor = .white
         view.addSubview(centerLabel)

@@ -1,29 +1,29 @@
-
-import Foundation
 import UIKit
 
-class OutputViewController: UIViewController {
+class AccountViewController: UIViewController {
     
     let centerLabel:UILabel = {
         let label = UILabel()
-        label.text = "OutPut"
-        label.textColor = UIColor.orange
+        label.text = "AccountPage"
+        label.textColor = UIColor.systemPink
         return label
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "OutPut"
+        self.title = "AccountPage"
         
         view = UIView()
         view.backgroundColor = .white
-        view.addSubview(centerLabel)
+        
         centerLabel.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(centerLabel)
         
         NSLayoutConstraint.activate([
             centerLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             centerLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
         ])
     }
-    
 }
+
+

@@ -2,24 +2,24 @@
 import UIKit
 
 class MainTabBarController: UITabBarController {
-    
-//    var viewControllers:[UIViewController] = []
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setTab()
-        
     }
     
+    //タブバー設置関数
     func setTab(){
-        let categoriesPage = CategoriesViewController()
-        categoriesPage.tabBarItem = UITabBarItem(title: "tab1", image: .none, tag: 0)
+        let categoriesPage = MainNavigationController(rootViewController: CategoriesViewController())
+        categoriesPage.tabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 0)
         
-        let outputPage = OutputViewController()
-        outputPage.tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 1)
+        let outputPage = MainNavigationController(rootViewController: OutputViewController())
+        outputPage.tabBarItem = UITabBarItem(tabBarSystemItem: .mostViewed, tag: 1)
         
-        viewControllers = [categoriesPage,outputPage]
+        let accountPage = MainNavigationController(rootViewController: AccountViewController())
+        accountPage.tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 2)
+        
+        viewControllers = [categoriesPage, outputPage, accountPage]
     }
 }
 

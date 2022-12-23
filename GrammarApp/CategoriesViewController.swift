@@ -11,13 +11,17 @@ class CategoriesViewController: UIViewController {
         return label
     }()
     
-    override func loadView() {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.title = "Categories"
         view = UIView()
         view.backgroundColor = .white
-        
+        //translatesAutoresizingMaskIntoConstraintsをfalseでAutoLayoutに設定
         centerLabel.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(centerLabel)
         
+        //　XY軸とも真ん中に設定
         NSLayoutConstraint.activate([
             centerLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             centerLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor)
